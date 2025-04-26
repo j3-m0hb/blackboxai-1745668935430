@@ -1,0 +1,141 @@
+{
+    "company_name": "PT. Sejahtera Bersama Express",
+    "legal_name": "PT. Sejahtera Bersama Express",
+    "address": "Jl. Raya Indramayu",
+    "contact_info": "Telp: (0234) 123456\nEmail: info@sbe.co.id",
+    "tax_id": "",
+    "logo": "",
+
+    "default_language": "id",
+    "timezone": "Asia/Jakarta",
+    "date_format": "d/m/Y",
+    "items_per_page": 25,
+    "session_timeout": 60,
+    "maintenance_mode": false,
+
+    "smtp_host": "",
+    "smtp_port": 587,
+    "smtp_username": "",
+    "smtp_password": "",
+    "from_email": "",
+    "from_name": "",
+
+    "min_password_length": 8,
+    "require_uppercase": true,
+    "require_numbers": true,
+    "require_symbols": true,
+    "max_login_attempts": 5,
+    "lockout_duration": 30,
+    "password_expiry": 90,
+
+    "attendance": {
+        "work_start": "08:00",
+        "work_end": "17:00",
+        "late_threshold": 15,
+        "overtime_min": 60,
+        "weekend_days": ["Saturday", "Sunday"]
+    },
+
+    "leave": {
+        "annual_leave_days": 12,
+        "sick_leave_days": 12,
+        "carry_forward_limit": 5,
+        "notice_period_days": 3
+    },
+
+    "payroll": {
+        "currency": "IDR",
+        "currency_symbol": "Rp",
+        "decimal_places": 0,
+        "thousands_separator": ".",
+        "decimal_separator": ",",
+        "pay_day": 25,
+        "overtime_rate": 1.5,
+        "weekend_rate": 2.0,
+        "holiday_rate": 2.0,
+        "tax_calculation": "monthly"
+    },
+
+    "documents": {
+        "max_file_size": 5242880,
+        "allowed_types": [
+            "application/pdf",
+            "application/msword",
+            "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "image/jpeg",
+            "image/png"
+        ],
+        "required_documents": [
+            "KTP",
+            "NPWP",
+            "Ijazah",
+            "CV"
+        ]
+    },
+
+    "notifications": {
+        "email": {
+            "contract_expiry": true,
+            "contract_expiry_days": 30,
+            "birthday": true,
+            "leave_request": true,
+            "leave_approval": true,
+            "attendance_report": true,
+            "payslip": true
+        },
+        "system": {
+            "contract_expiry": true,
+            "contract_expiry_days": 30,
+            "birthday": true,
+            "leave_request": true,
+            "leave_balance": true,
+            "attendance_late": true,
+            "document_expiry": true
+        }
+    },
+
+    "backup": {
+        "auto_backup": true,
+        "backup_frequency": "daily",
+        "backup_time": "23:00",
+        "keep_backups": 30,
+        "backup_path": "backup",
+        "include_files": true
+    },
+
+    "security": {
+        "login_attempts": 5,
+        "lockout_duration": 30,
+        "password_expiry": 90,
+        "session_timeout": 60,
+        "remember_me_duration": 30,
+        "force_ssl": true,
+        "allowed_ips": [],
+        "two_factor_auth": false
+    },
+
+    "system": {
+        "debug_mode": false,
+        "log_level": "error",
+        "log_days": 30,
+        "cache_duration": 3600,
+        "upload_path": "uploads",
+        "temp_path": "temp",
+        "pagination": {
+            "per_page": 25,
+            "page_range": 5
+        }
+    },
+
+    "modules": {
+        "attendance": true,
+        "leave": true,
+        "payroll": true,
+        "documents": true,
+        "reports": true,
+        "notifications": true,
+        "chat": false,
+        "tasks": false,
+        "performance": false
+    }
+}
